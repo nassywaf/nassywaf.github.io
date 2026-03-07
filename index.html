@@ -12,13 +12,26 @@ margin:0;
 background:#000;
 display:flex;
 justify-content:center;
+align-items:flex-start;
+min-height:100vh;
 font-family:Arial, Helvetica, sans-serif;
 }
 
 .container{
 position:relative;
-width:620px;
-max-width:95vw;
+width:420px;
+max-width:100%;
+transform:scale(1.8);
+transform-origin:top center;
+}
+
+/* mode HP */
+@media (max-width:600px){
+
+.container{
+transform:scale(1);
+}
+
 }
 
 .container img{
@@ -74,6 +87,7 @@ color:#bbbbbb;
 
 </body>
 </html>
+
 
 
 
